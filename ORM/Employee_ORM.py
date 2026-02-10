@@ -1,3 +1,11 @@
+# ORM = Object Relational Mapping
+
+# technique that uses python class and object to create database manually instead of sql queries
+"""
+database table = python class 
+database rows = python objects
+"""
+
 from sqlalchemy.orm import declarative_base, Session  # creates base class
 from sqlalchemy import Column, Integer, String, table  # inserting table
 from sqlalchemy.orm import sessionmaker                 # create session to talk to database
@@ -42,3 +50,4 @@ print("\nEmployee updated\n")
 employees=session.query(Employee).all()
 for i in employees:                                         # to print all the data in console
     print(i.id,i.name,i.age,i.department)
+
