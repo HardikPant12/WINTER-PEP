@@ -1,0 +1,125 @@
+FINTRACK PRO is a Command Line Interface (CLI) based expense tracking system built using Python and SQLAlchemy ORM.
+It helps users manage expenses, categories, budgets, and reports efficiently using a local SQLite database.
+
+🚀 Features
+
+✅ Add, update, and delete expenses
+
+📂 Automatic category management
+
+🔍 Search expenses by date
+
+📊 Category-wise expense reports
+
+💸 Monthly budget setting & tracking
+
+⚠️ Budget exceeded warning
+
+🗄 Persistent storage using SQLite
+
+🛠️ Technologies Used
+
+Python 3
+
+SQLAlchemy (ORM)
+
+SQLite
+
+CLI (Command Line Interface)
+
+📂 Project Structure
+fintrack.py
+fintrack.db   (auto-created)
+README.md
+
+⚙️ Installation & Setup
+1️⃣ Clone or Download the Project
+git clone <your-repo-link>
+cd fintrack
+
+2️⃣ Install Required Package
+pip install sqlalchemy
+
+
+(Python standard library datetime is used – no extra install needed)
+
+▶️ How to Run
+python fintrack.py
+
+
+On first run, the database fintrack.db will be created automatically.
+
+🧭 Menu Options
+====== FINTRACK ======
+1 Add Expense
+2 Update Expense
+3 Delete Expense
+4 Search by Date
+5 Category Report
+6 Set Budget
+7 Check Budget
+0 Exit
+
+📌 Functional Overview
+➕ Add Expense
+
+Enter title, amount, and category
+
+New category is auto-created if it doesn’t exist
+
+Date is set to today automatically
+
+✏️ Update Expense
+
+Update expense amount using Expense ID
+
+🗑 Delete Expense
+
+Delete an expense by ID
+
+🔎 Search by Date
+
+Search expenses using YYYY-MM-DD
+
+📊 Category Report
+
+Displays total expenses grouped by category
+
+💰 Set Budget
+
+Set monthly budget using YYYY-MM
+
+⚠️ Check Budget
+
+Shows total spent vs budget
+
+Warns if budget is exceeded
+
+🧠 Database Tables
+
+categories
+
+expenses
+
+subscriptions (future use)
+
+budgets
+
+📈 Future Improvements
+
+📅 Subscription auto-expense tracking
+
+📤 Export reports to CSV / Excel
+
+📉 Monthly & yearly analytics
+
+🧾 Authentication (multi-user support)
+
+👨‍💻 Author
+
+Hardik Pant
+Python | SQLAlchemy | Backend Development
+
+📜 License
+
+This project is open-source and free to use for learning and personal projects.
